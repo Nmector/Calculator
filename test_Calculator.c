@@ -20,6 +20,9 @@ void test_add_zero(void) {
 void test_subtract_positive_numbers(void) {
     TEST_ASSERT_EQUAL(2, subtract(5, 3));
 }
+void test_multiply_positive_numbers(void) {
+    TEST_ASSERT_EQUAL(15, multiply(3, 5));
+}
 
 int main(void) {
     UNITY_BEGIN();
@@ -28,5 +31,6 @@ int main(void) {
     RUN_TEST(test_add_negative_numbers);
     RUN_TEST(test_add_zero);
     RUN_TEST(test_subtract_positive_numbers);
+    RUN_TEST(test_multiply_positive_numbers);
     return UNITY_END();
 }
