@@ -23,6 +23,9 @@ void test_subtract_positive_numbers(void) {
 void test_multiply_positive_numbers(void) {
     TEST_ASSERT_EQUAL(15, multiply(3, 5));
 }
+void test_divide_positive_numbers(void) {
+    TEST_ASSERT_EQUAL(2, divide(6, 3));
+}
 
 int main(void) {
     UNITY_BEGIN();
@@ -32,5 +35,6 @@ int main(void) {
     RUN_TEST(test_add_zero);
     RUN_TEST(test_subtract_positive_numbers);
     RUN_TEST(test_multiply_positive_numbers);
+    RUN_TEST(test_divide_positive_numbers);
     return UNITY_END();
 }
